@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/yeti/bootstrap.min.css" rel="stylesheet" integrity="sha384-HzUaiJdCTIY/RL2vDPRGdEQHHahjzwoJJzGUkYjHVzTwXFQ2QN/nVgX7tzoMW3Ov" crossorigin="anonymous">
+  <style>
+    .container {
+      margin-top: 3rem;
+    }
+
+    .dash {
+      margin-top: 8rem;
+      margin-bottom: 0rem;
+    }
+
+    .titles {
+      font-size: 3rem;
+    }
+
+    .remove {
+      color: white;
+      background-color: red;
+      border-radius: .5rem;
+      font-size: 1rem;
+    }
+
+    .labels {
+      border-radius: .5rem;
+    }
+
+    .badge {
+      color: white !important;
+      background-color: gray !important;
+    }
+    
+    
+  </style>
+</head>
+<body>
+<div class="container-fluid">
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+
+      <!-- Collect the nav links for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#">Home <span class="sr-only">(current)</span></a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Messages <span class="badge">12</span></a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#">LOGO</a></li>        
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
+
+  <section>
+    <div class="row dash">
+      <div class="col-xs-12 titles"><b>Dashboard:</b></div>
+      <div class="col-xs-12">
+        <table class="table table-striped dashboard">
+          <thead>
+              <tr>
+                  <th>Name</th>
+                  <th>Team</th>
+                  <th>All Star</th>
+                  <th>Remove</th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr>
+                  <td>Steph</td>
+                  <td>Warriors</td>
+                  <td>Yes</td>
+                  <td>
+                    <button type="button" class="btn btn-xs remove" aria-label="Remove">
+                      <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+                    </button>
+                  </td>
+              </tr>
+              <tr>
+                  <td>Lebron</td>
+                  <td>Cavaliers</td>
+                  <td>Yes</td>
+                  <td>
+                    <button type="button" class="btn btn-xs remove" aria-label="Remove">
+                      <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+                    </button>
+                  </td>
+              </tr>
+              </tr>
+              <tr>
+                  <td>Dwayne</td>
+                  <td>Heat</td>
+                  <td>Yes</td>
+                  <td>
+                    <button type="button" class="btn btn-xs remove" aria-label="Remove">
+                      <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+                    </button>
+                  </td>
+              </tr>
+              </tr>
+              <tr>
+                  <td>Kobe</td>
+                  <td>Lakers</td>
+                  <td>Yes <span class="label label-warning labels"><b>Last</b></span></td>
+                  <td>
+                    <button type="button" class="btn btn-xs remove" aria-label="Remove">
+                      <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+                    </button>
+                  </td>
+              </tr>
+              </tr>
+              <tr>
+                  <td>Isaiah</td>
+                  <td>Celtics</td>
+                  <td>Yes <span class="label label-success labels"><b>First</b></span></td>
+                  <td>
+                    <button type="button" class="btn btn-xs remove" aria-label="Remove">
+                      <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+                    </button>
+                  </td>
+              </tr>
+              </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+  <hr>
+  <section>
+    <div class="row todos">
+      <div class="col-xs-12 titles"><b>Todos:</b></div>
+      <div class="col-xs-12">
+        <ul class="list-group">
+          <li class="list-group-item list-group-item-success"><b>Feel good about Bootstrap</b></li>
+          <li class="list-group-item list-group-item-info"><b>Feel informed about Bootstrap</b></li>
+          <li class="list-group-item list-group-item-warning"><b>Feel worried about Bootstrap</b></li>
+          <li class="list-group-item list-group-item-warning"><b>Maybe I should read the docs...</b></li>
+          <li class="list-group-item list-group-item-danger"><b>Danger zone</b></li>
+          <li class="list-group-item list-group-item-danger"><b>I really should read the docs...</b></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+</div>
+</body>
+</html>

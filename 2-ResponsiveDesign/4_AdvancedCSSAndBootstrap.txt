@@ -1,0 +1,20 @@
+Katie Krieger
+4/5/2017
+
+
+Transforms, Transitions, and Animations Exercises
+https://www.rithmschool.com/courses/intermediate-css-bootstrap/css-transform-transition-animation-exercise'
+See code pushed to GitHub.
+
+
+Responsive Design Exercises
+https://www.rithmschool.com/courses/intermediate-css-bootstrap/responsive-design-exercise
+
+Part 1
+1. An em is a relative unit of measurement, where 1em equals the default font-size for the element (or parent, if the font-size is defined in terms of ems).
+2. 1em equals the default font-size for the element, whereas 1rem equals the default font-size of the root (html) element, so 1rem is the same everywhere on the page.
+3. A mobile-first design is an approach to responsive design that forces the developer to think about mobile users before desktop users, such that css styles are applied first to mobile devices, and advanced styles and other overrides for larger screens are added into the style sheet using media queries.
+4. BEM is a CSS organizational structure that stands for Block, Element, and Modifier.
+
+Part 2
+See code pushed to GitHub.

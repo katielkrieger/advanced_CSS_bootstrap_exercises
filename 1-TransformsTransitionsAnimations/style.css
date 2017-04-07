@@ -1,0 +1,117 @@
+#seconds {
+	height: 180px;
+	width: 0px;
+	background-color: red;
+    position: absolute;
+    left: 400px;
+    bottom: 500px;
+    margin-left: -2px;
+    animation: sec 60s linear infinite;
+}
+
+#minutes {
+	height: 150px;
+	width: 0px;
+	background-color: #252B2A;
+    position: absolute;
+    left: 400px;
+    bottom: 500px;
+    margin-left: -3px;
+    animation: min 3600s linear infinite;
+}
+
+#hours {
+	height: 100px;
+	width: 0px;
+	background-color: #252B2A;
+    position: absolute;
+    left: 400px;
+    bottom: 500px;
+    margin-left: -6px;
+	animation: hour 86400s linear infinite;
+}
+
+#circle {
+	width: 400px;
+    height: 400px;
+    position: absolute;
+    left: 200px;
+    bottom: 300px;
+    animation: circ 1s linear infinite;
+}
+
+#inside{
+	width: 20px;
+    height: 20px;
+    position: absolute;
+    left: 390px;
+    bottom: 490px;
+    animation: ins 1s linear infinite;
+}
+
+@keyframes circ {
+	0%, 100% {
+	    transform: translate(0px,0px);  
+	    border-radius: 50%;
+	    border: 2px solid #555555;
+	    background-color: #C5DADE;
+  }
+}
+
+@keyframes ins {
+	0%, 100% {
+	    transform: translate(0px,0px);  
+	    border-radius: 50%;
+	    background-color: black;
+  }
+}
+@keyframes sec {
+	0% {
+		transform: rotate(0deg);
+		transform-origin: center bottom;
+		border-top-left-radius: 50%;
+		border-top-right-radius: 50%;
+		border: 2px solid red;
+	}
+	100% {
+		transform: rotate(360deg);
+		transform-origin: center bottom;
+		border-top-left-radius: 50%;
+		border-top-right-radius: 50%;
+		border: 2px solid red;
+	}
+}
+
+@keyframes min {
+	0% {
+		transform: rotate(0deg);
+		transform-origin: center bottom;
+		border-top-left-radius: 30%;
+		border-top-right-radius: 30%;
+		border: 3px solid #252B2A;
+	}
+	100% {
+		transform: rotate(360deg);
+		transform-origin: center bottom;
+		border-top-left-radius: 30%;
+		border-top-right-radius: 30%;
+		border: 3px solid #252B2A;
+	}
+}
+
+@keyframes hour {
+	0% {
+		transform: rotate(0deg);
+		transform-origin: center bottom;
+		border-top-left-radius: 20%;
+		border-top-right-radius: 20%;
+		border: 6px solid #252B2A;
+	}
+	100% {
+		transform: rotate(360deg);
+		transform-origin: center bottom;
+		border-top-left-radius: 20%;
+		border-top-right-radius: 20%;
+		border: 6px solid #252B2A;
+	}
+}
